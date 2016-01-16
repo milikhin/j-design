@@ -94,8 +94,12 @@
         padding: 19px 15px 5px 15px;
       }
     </style>
+    
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+    <link href="./css/carousel.css" rel="stylesheet" type="text/css"/>
 
     <script src='./js/feedback.js'></script>
+    <script src='./js/carousel.js'></script>
   </head>
 
   <body>
@@ -217,11 +221,8 @@
                   <img src="" alt="" /> Отзыв 1
                 </a>
               </div>
-              <div class="photo-container">
-                <a class="photo-container__photo-updater photo-container__photo-src" data-url="" data-alt="" data-href="" href="#">
-                  <img src="" alt="" /> Отзыв 2
-                </a>
-              </div>
+            </li>
+            <li class="">
               <div class="photo-container">
                 <a class="photo-container__photo-updater photo-container__photo-src" data-url="" data-alt="" data-href="" href="#">
                   <img src="" alt="" /> Отзыв 2
@@ -251,6 +252,10 @@
     <script>
       [].forEach.call(document.querySelectorAll('.r5mFeedback__form'), function(formElem) {
         new FeedbackController(formElem);
+      });
+
+      [].forEach.call(document.querySelectorAll('.carousel'), function(elem) {
+        new Carousel(elem);
       });
     </script>
   </body>
