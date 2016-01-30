@@ -2,6 +2,10 @@
   background: url('../images/footer-bg.jpg') no-repeat;
   background-size: cover;
 
+  min-width: 100%;
+
+  display: inline-block;
+
   color: #dedede;
   padding: 20px 0;
   margin-top: 40px;
