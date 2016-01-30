@@ -1,0 +1,16 @@
+.footer {
+  background: url('../images/footer-bg.jpg') no-repeat;
+  background-size: cover;
+
+  color: #dedede;
+  padding: 20px 0;
+  margin-top: 40px;
+}
+
+.copyright {
+  text-align: left;
+}
+
+.copyright__contact {
+  margin: 0;
+}

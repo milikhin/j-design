@@ -34,6 +34,7 @@ define([], function () {
 			}
 		});
 
+		console.log(self.images);
 		this.currentIndex = 0;
 		this.total = this.images.length;
 		this._onKeyHandler = this._onKey.bind(this);

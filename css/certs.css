@@ -8,7 +8,7 @@
 
 .photo-container {
   float: left;
-  padding: 0 0.5%;
+  padding: 0 1% 0 0;
   /*box-sizing: border-box;*/
   max-width: 11.6%;
 }

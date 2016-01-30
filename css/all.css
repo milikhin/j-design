@@ -1,8 +1,11 @@
 @import 'common.css';
 
 @import 'header-section.css';
+@import 'footer.css';
 @import 'offer-section.css';
 @import 'stages-section.css';
+@import 'reviews.css';
+@import 'contacts.css';
 
 @import 'carousel.css';
 @import 'certs.css';
@@ -10,3 +13,6 @@
 @import 'horizontal-menu.css';
 @import 'r5m-dimmer.css';
 @import 'jd-dimmer.css';
+
+@import 'image-zoomer.css';
+@import 'jd-image-zoomer.css';

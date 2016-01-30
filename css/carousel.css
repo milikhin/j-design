@@ -7,7 +7,7 @@
    white-space: nowrap;
    margin: 0;
    padding: 0;
-    
+
 }
 
 .carousel .carousel__animation {
@@ -35,10 +35,10 @@
 
 .carousel {
    width: 100%;
-   padding: 0 40px;
+   padding: 0 60px;
    overflow: hidden;
    position: relative;
-   
+
    -moz-box-sizing:border-box;
    -webkit-box-sizing:border-box;
    box-sizing:border-box;
@@ -52,9 +52,10 @@
    -ms-transform: translateY(-50%);
    -o-transform: translateY(-50%);
    transform: translateY(-50%);
-   border: solid 1px black;
    cursor: pointer;
-   font-size: 25px;
+   font-size: 35px;
+
+   color: #ccc;
 }
 
 .carousel .carousel__left-button {

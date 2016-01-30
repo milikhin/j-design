@@ -1,0 +1,56 @@
+.review__content-wrapper {
+  width: 100%;
+  float: left;
+}
+
+.review__figure {
+  float: left;
+  width: 300px;
+  margin: 0;
+  margin-right: -300px;
+}
+
+.review__content {
+  float: right;
+  margin-left: 300px;
+  padding: 0 0 0 40px;
+  white-space: normal;
+}
+
+.review__figure__img {
+  width: 100%;
+}
+
+.review__content h3 {
+  margin: 0 0 0 -90px;
+  position: relative;
+  font-weight: normal;
+  padding: 10px 10px 10px 90px;
+  background: rgb(249, 228, 132);
+  background: rgba(249, 228, 132, 0.7);
+}
+
+.review__content h3::before {
+  content: " ";
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 50px;
+  background: rgb(249, 228, 132);
+  background: rgba(249, 228, 132, 0.7);
+  background-image: url('../images/arrows.png');
+  background-repeat: no-repeat;
+  background-position: 15px 15px;
+}
+
+.review__content ul {
+  padding: 0;
+  margin: 0;
+}
+
+.review__sign {
+  text-align: right;
+  font-weight: normal;
+  font-style: oblique
+}

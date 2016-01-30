@@ -1,0 +1,11 @@
+.contacts {
+  margin-bottom: 50px;
+}
+.contacts__entry {
+  margin: 0;
+}
+
+.contacts__entry__value {
+  font-weight: 600;
+  color: black;
+}

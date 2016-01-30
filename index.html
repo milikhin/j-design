@@ -11,7 +11,7 @@
 
     <script src="./js/require.js"></script>
     <script>
-      window.r5mModules = ['feedback', 'r5mDimmer', 'carousel'];
+      window.r5mModules = ['feedback', 'r5mDimmer', 'carousel', 'gallery'];
       var isDebug = ~location.search.indexOf("debug=1");
 
       require.config({
@@ -69,7 +69,7 @@
             <li class="menu-container__list__item">
               <a href="./">На главную</a>
             </li>
-            <li class="menu-container__list__item">
+            <!-- <li class="menu-container__list__item">
               <a href="prices.html">Цены</a>
             </li>
             <li class="menu-container__list__item">
@@ -77,7 +77,7 @@
             </li>
             <li class="menu-container__list__item">
               <a href="portfolio.html"> Портфолио</a>
-            </li>
+            </li> -->
             <li class="menu-container__list__item">
               <a href="contacts.html"> Контакты</a>
             </li>
@@ -240,46 +240,45 @@
             В своей работе всегда исхожу из потребностей и пожеланий заказчика. Ваш интерьер будет глубоко индивидуальными, ориентированными на Вас и Вашу семью.
           </p>
         </div>
-        <div class="about-me__certs clearfix">
+        <div class="about-me__certs gallery-container clearfix" data-page-id="certs">
 
-          <h3>Сертификаты</h3>
           <div class="photo-container">
-            <a class="photo-container__photo-updater photo-container__photo-src" data-url="" data-alt="" data-href="" href="#">
-              <figure>
-                <img src="images/cert-1s.jpg" alt="Аттестация" />
+            <a class="photo-container__photo-updater photo-container__photo-src r5m-gallery-link" rel="gr-reviews" href="#">
+              <figure class="r5m-gallery-img" data-alt="Союз строителей Омской области" data-href="./images/cert-1.jpg" data-file-name="cert-1.jpg">
+                <img src="images/cert-1s.jpg" alt="Союз строителей Омской области" />
                 <figcaption>Аттестация</figcaption>
               </figure>
             </a>
           </div>
           <div class="photo-container">
-            <a class="photo-container__photo-updater photo-container__photo-src" data-url="" data-alt="" data-href="" href="#">
-              <figure>
-                <img src="images/cert-2s.jpg" alt="Аттестация (продолжение)" />
-                <figcaption>Аттестация (продолжение)</figcaption>
+            <a class="photo-container__photo-updater photo-container__photo-src r5m-gallery-link" rel="gr-reviews" href="#">
+              <figure class="r5m-gallery-img" data-alt="Союз строителей Омской области (продолжение)" data-href="./images/cert-2.jpg" data-file-name="cert-2.jpg">
+                <img src="images/cert-2s.jpg" alt="Союз строителей Омской области (продолжение)" />
+                <figcaption>Союз строителей Омской области (продолжение)</figcaption>
               </figure>
             </a>
           </div>
           <div class="photo-container revert">
-            <a class="photo-container__photo-updater photo-container__photo-src" data-url="" data-alt="" data-href="" href="#">
-              <figure>
-                <img src="images/cert-3s.jpg" alt="Аттестация (продолжение)" />
-                <figcaption>Аттестация (продолжение)</figcaption>
+            <a class="photo-container__photo-updater photo-container__photo-src r5m-gallery-link" rel="gr-reviews" href="#">
+              <figure class="r5m-gallery-img" data-alt="Дизайн интерьера" data-href="./images/cert-3.jpg" data-file-name="cert-3.jpg">
+                <img src="images/cert-3s.jpg" alt="Дизайн интерьера" />
+                <figcaption>Дизайн интерьера</figcaption>
               </figure>
             </a>
           </div>
           <div class="photo-container revert">
-            <a class="photo-container__photo-updater photo-container__photo-src" data-url="" data-alt="" data-href="" href="#">
-              <figure>
-                <img src="images/cert-4s.jpg" alt="Аттестация (продолжение)" />
-                <figcaption>Аттестация (продолжение)</figcaption>
+            <a class="photo-container__photo-updater photo-container__photo-src r5m-gallery-link" rel="gr-reviews" href="#">
+              <figure class="r5m-gallery-img" data-alt="3D Max" data-href="./images/cert-4.jpg" data-file-name="cert-4.jpg">
+                <img src="images/cert-4s.jpg" alt="3D Max" />
+                <figcaption>3D Max</figcaption>
               </figure>
             </a>
           </div>
           <div class="photo-container revert">
-            <a class="photo-container__photo-updater photo-container__photo-src" data-url="" data-alt="" data-href="" href="#">
-              <figure>
-                <img src="images/cert-5s.jpg" alt="Аттестация (продолжение)" />
-                <figcaption>Аттестация (продолжение)</figcaption>
+            <a class="photo-container__photo-updater photo-container__photo-src r5m-gallery-link" rel="gr-reviews" href="#">
+              <figure class="r5m-gallery-img" data-alt="ArchiCAD" data-href="./images/cert-5.jpg" data-file-name="cert-5.jpg">
+                <img src="images/cert-5s.jpg" alt="ArchiCAD" />
+                <figcaption>ArchiCAD</figcaption>
               </figure>
             </a>
           </div>
@@ -296,17 +295,69 @@
         <div class="additional-photo-wrapper item-carousel carousel">
           <ul>
             <li class="">
-              <div class="photo-container">
-                <a class="photo-container__photo-updater photo-container__photo-src" data-url="" data-alt="" data-href="" href="#">
-                  <img src="" alt="" /> Отзыв 1
-                </a>
+              <figure class="review__figure">
+                <img class="review__figure__img" src="./images/review-1.jpg" />
+              </figure>
+              <div class="review__content-wrapper">
+                <div class="review__content">
+                  <h3>
+                    Квартира площадью 73 кв.м.
+                  </h3>
+                  <p>
+                    Обратилась за помощью к Юлии. Она грамотно распланировала этапы ремонта. Сделала замеры, подготовила варианты планировок.
+                  </p>
+                  <p>
+                    Юлия помогла нам в процессе ремонта и, благодаря дизайнеру, мы его сделали за максимально короткий срок и смогли переехать в нашу новую квартиру.
+                  </p>
+                  <p class="review__sign">
+                    Анна К.
+                  </p>
+                </div>
+              </div>
+
+            </li>
+            <li class="">
+              <figure class="review__figure">
+                <img class="review__figure__img" src="./images/review-2.jpg" />
+              </figure>
+              <div class="review__content-wrapper">
+                <div class="review__content">
+                  <h3>
+                    Квартира площадью 157 кв.м.
+                  </h3>
+                  <p>
+                    Уже через месяц мы получили готовый дизайн проект нашей квартиры.
+                    Это был план к действию!
+                    Все было продумано до мелочей, поэтому руководить ремонтом было очень легко.
+                  </p>
+                  <p>
+                    Если у нас оставались  вопросы, то Юля давала нам подробные консультации. Также она периодически посещала квартиру и контролировала процессы ремонта.
+                  </p>
+                  <p class="review__sign">
+                    Ольга В.
+                  </p>
+                </div>
               </div>
             </li>
             <li class="">
-              <div class="photo-container">
-                <a class="photo-container__photo-updater photo-container__photo-src" data-url="" data-alt="" data-href="" href="#">
-                  <img src="" alt="" /> Отзыв 2
-                </a>
+              <figure class="review__figure">
+                <img class="review__figure__img" src="./images/review-2.jpg" />
+              </figure>
+              <div class="review__content-wrapper">
+                <div class="review__content">
+                  <h3>
+                    Кухня и прихожая
+                  </h3>
+                  <p>
+                    Заказывали кухню в мебельном салоне по Юлиным чертежам. Сотрудникам салона не пришлось ничего менять в проекте. И в результате я получила кухню своей мечты.
+                  </p>
+                  <p>
+                    Профессиональный подход, осведомленность о современных тенденциях дизайна интерьеров, доброжелательное отношение к заказчику оставило самое приятное впечатление от работы с Юлией.
+                  </p>
+                  <p class="review__sign">
+                    Ольга В.
+                  </p>
+                </div>
               </div>
             </li>
           </ul>
@@ -315,16 +366,54 @@
         </div>
       </div>
     </section>
+
+    <section class="offer clearfix">
+      <div class="flexible-container">
+        <div class="offer__feedback-wrapper">
+          <div class="offer__feedback">
+            <div class="offer__bg"></div>
+            <h2 class="offer__title">
+            Заполните форму
+          </h2>
+            <h3 class="offer__subtitle">
+            и получите консультацию по дизайну<br/>интерьера вашего дома бесплатно
+          </h3>
+            <div class="r5mFeedback offer__feedback__form">
+              <form action="/feedback" class="r5mFeedback__form">
+                <label class="r5mFeedback__label">
+                  <span class="r5mFeedback__placeholder">Ваше имя*</span>
+                  <input class="r5mFeedback__input" name="name" required type="text" />
+                </label>
+                <!-- <label class="r5mFeedback__label">
+                <span class="r5mFeedback__placeholder">Телефон*</span>
+                <input class="r5mFeedback__input" name="phone" required type="text" />
+              </label> -->
+                <label class="r5mFeedback__label last">
+                  <span class="r5mFeedback__placeholder">E-mail*</span>
+                  <input class="r5mFeedback__input" name="email" type="text" required />
+                </label>
+                <button class="r5mFeedback__submit-button r5m-action" type="submit">
+                  <!-- <i class="fa fa-check"></i>  -->
+                  Получить консультацию
+                </button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
     <footer class="footer">
       <div class="flexible-container">
 
         <div class="copyleft">
-          @2016 Милихина Юлия
-        </div>
-        <div class="copyright">
+          <p class="copyright__contact">Милихина Юлия</p>
           <p class="copyright__contact">+7 912 345 6789</p>
           <p class="copyright__contact">milikhinjp@gmail.com</p>
           <p class="copyright__contact">г. Новокузнецк</p>
+        </div>
+        <div class="copyright">
+          &copy; 2016
         </div>
       </div>
     </footer>
