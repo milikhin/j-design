@@ -12,19 +12,22 @@
     <script src="./js/require.js"></script>
     <script>
       window.r5mModules = ['feedback', 'r5mDimmer'];
+      var isDebug = ~location.search.indexOf("debug=1");
 
       require.config({
         baseUrl: './js',
         packages: [{
           name: "r5m",
-          main: ~location.search.indexOf("debug=1") ? "index" : "index-built"
+          main: isDebug ? "index" : "index-built"
         }, {
           name: "vendor",
           location: "bower_components"
         }]
       });
 
-      require(['r5m']);
+      require(['r5m'], function() {
+        require(['r5m/index']);
+      });
 
     </script>
   </head>
