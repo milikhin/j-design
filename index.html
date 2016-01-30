@@ -6,32 +6,26 @@
     <title>Профессиональный дизайн интерьера в Новокузнецке под ключ. Милихина Юлия</title>
 
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+    <link href="./dist/lp.css" rel="stylesheet" type="text/css" />
     <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700,600&subset=latin,cyrillic' rel='stylesheet' type='text/css'>
-    <!-- <link href="./css/all.css" rel="stylesheet" type="text/css" /> -->
 
     <script src="./js/require.js"></script>
     <script>
       window.r5mModules = ['feedback', 'r5mDimmer', 'carousel'];
       var isDebug = ~location.search.indexOf("debug=1");
 
-      var csslinkElem = document.createElement('link');
-      csslinkElem.setAttribute('rel', 'stylesheet');
-      csslinkElem.setAttribute('type', 'text/css');
-      csslinkElem.setAttribute('href', isDebug ? './css/all.css' : './css/all-built.css');
-      document.head.appendChild(csslinkElem);
-
       require.config({
         baseUrl: './js',
         packages: [{
           name: "r5m",
-          main: isDebug ? "index" : "index-built"
+          main: "index"
         }, {
           name: "vendor",
           location: "bower_components"
         }]
       });
 
-      require(['r5m'], function() {
+      require([isDebug ? 'r5m' : '../dist/lp'], function() {
         require([
           'r5m/app'
         ], function(app) {
@@ -64,7 +58,7 @@
             </button>
           </div>
           <p class="header__order__call">
-            <button class="header__order__call__button"  data-action="r5mDimmer-show" data-type="question">
+            <button class="header__order__call__button" data-action="r5mDimmer-show" data-type="question">
               Оставить заявку
             </button>
           </p>
