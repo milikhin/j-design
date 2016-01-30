@@ -26,7 +26,11 @@
       });
 
       require(['r5m'], function() {
-        require(['r5m/index']);
+        require([
+          'r5m/app'
+        ], function(app) {
+          app(window.r5mModules);
+        });
       });
 
     </script>
@@ -335,7 +339,8 @@
               Спасибо!
             </h2>
             <p>
-              Мы свяжемся с Вами по указанному E-mail адресу<br/>в кратчайшие сроки.
+              Мы свяжемся с Вами по указанному E-mail адресу
+              <br/>в кратчайшие сроки.
             </p>
             <button class="r5m-action r5m-dimmer-thanks__button" data-action="r5mDimmer-close" type="submit">
               Ок
