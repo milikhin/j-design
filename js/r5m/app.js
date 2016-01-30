@@ -1,7 +1,8 @@
 define([
 	'r5m/modules/lib/closest',
 	'r5m/modules/r5mDimmer/controller',
-	'r5m/modules/feedback/controller'
+	'r5m/modules/feedback/controller',
+	'r5m/modules/carousel/controller'
 ], function (applyClosestPolyfill) {
 
 	return function (modules) {
