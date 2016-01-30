@@ -25,16 +25,15 @@ define([], function () {
 		}
 	};
 
-	r5mDimmer.prototype.showDimmer = function (target) {
+	r5mDimmer.prototype.showDimmer = function (target, type) {
 		var self = this;
-		console.log('!!!', this.dimmer);
 		if (!this.dimmer) {
 			throw new Error('Dimmer Element not found');
 		}
 
-		var actionType = target.getAttribute('data-type');
+		var actionType = type || target.getAttribute('data-type');
 		var actionText = target.getAttribute('data-text');
-
+		console.log(actionType);
 
 		//по-умолчанию просто показываем dimmer
 		if (!actionType) {

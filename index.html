@@ -41,7 +41,7 @@
       <div class="flexible-container">
         <div class="header__title">
           <h1 class="header__title__caption">
-            Профессиональный дизайн интерьера под&nbsp;ключ
+            <a href="./">Профессиональный дизайн интерьера под&nbsp;ключ</a>
           </h1>
           <h2 class="header__title__subtitle">
             Преобразим вашу квартиру, дом или офис!
@@ -52,13 +52,13 @@
             <p class="header__order__phone">
               +7 904 968 1827
             </p>
-            <button class="header__order__call__link">
+            <button class="header__order__call__link" data-action="r5mDimmer-show" data-type="call">
               Заказать звонок
               <hr class="header__order__call__link__border" />
             </button>
           </div>
           <p class="header__order__call">
-            <button class="header__order__call__button">
+            <button class="header__order__call__button"  data-action="r5mDimmer-show" data-type="question">
               Оставить заявку
             </button>
           </p>
@@ -204,7 +204,7 @@
           </div>
           <div class="stages__blocks__stage clearfix">
             <figure class="stages__blocks__stage__figure">
-              <img class="stages__blocks__stage__figure__img" src="./images/stage-4.jpg" />
+              <img class="stages__blocks__stage__figure__img" src="./images/stage-4_.jpg" />
             </figure>
             <div class="stages__blocks__stage__content-wrapper">
               <div class="stages__blocks__stage__content">
@@ -333,13 +333,16 @@
     <!-- forms -->
     <div class="r5m-dimmer">
       <div class="r5m-dimmer__container">
+
+        <!-- Thanks form -->
         <div class="r5m-dimmer-wrapper r5m-dimmer-thanks hidden">
           <form onsubmit="return false;">
             <h2>
               Спасибо!
             </h2>
             <p>
-              Мы свяжемся с Вами по указанному E-mail адресу
+              Мы свяжемся с Вами по указанному
+              <br/>Email-адресу или телефону
               <br/>в кратчайшие сроки.
             </p>
             <button class="r5m-action r5m-dimmer-thanks__button" data-action="r5mDimmer-close" type="submit">
@@ -347,8 +350,62 @@
             </button>
           </form>
         </div>
+
+        <!-- Call form -->
+        <div class="r5m-dimmer-wrapper r5m-dimmer-call hidden">
+          <div class="r5mFeedback">
+            <form action="/feedback" class="r5mFeedback__form">
+              <button class="r5mFeedback__close-button r5m-action" data-action="r5mDimmer-close" type="button">
+                <i class="fa fa-times"></i>
+              </button>
+              <h2 class="r5mFeedback__form__header">Закажите звонок</h2>
+              <label class="r5mFeedback__label">
+                <span class="r5mFeedback__placeholder">Имя*</span>
+                <input class="r5mFeedback__input" name="name" required type="text" />
+              </label>
+              <label class="r5mFeedback__label">
+                <span class="r5mFeedback__placeholder">Телефон*</span>
+                <input class="r5mFeedback__input" name="phone" required type="text" />
+              </label>
+              <button class="r5mFeedback__submit-button" type="submit">
+                Заказать звонок
+              </button>
+            </form>
+          </div>
+        </div>
+
+        <!-- Question form -->
+        <div class="r5m-dimmer-wrapper r5m-dimmer-question hidden">
+          <div class="r5mFeedback">
+            <form action="/feedback" class="r5mFeedback__form">
+              <button class="r5mFeedback__close-button r5m-action" data-action="r5mDimmer-close" type="button">
+                <i class="fa fa-times"></i>
+              </button>
+              <h2 class="r5mFeedback__form__header">Оставить Заявку</h2>
+              <label class="r5mFeedback__label">
+                <span class="r5mFeedback__placeholder">Имя*</span>
+                <input class="r5mFeedback__input" name="name" required="" type="text">
+              </label>
+              <!-- <label class="r5mFeedback__label">
+                <span class="r5mFeedback__placeholder">Телефон*</span>
+                <input class="r5mFeedback__input" name="phone" required="" type="text">
+              </label> -->
+              <label class="r5mFeedback__label">
+                <span class="r5mFeedback__placeholder">E-mail*</span>
+                <input class="r5mFeedback__input" name="email" type="text" required>
+              </label>
+              <label class="r5mFeedback__label">
+                <span class="r5mFeedback__placeholder">Комментарии</span>
+                <textarea class="r5mFeedback__text" name="text"></textarea>
+              </label>
+              <button class="r5mFeedback__submit-button" type="submit">
+                Оставить заявку
+              </button>
+            </form>
+
+          </div>
+        </div>
       </div>
-    </div>
   </body>
 
 </html>

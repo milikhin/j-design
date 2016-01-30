@@ -26,17 +26,18 @@ define([
 				}
 			});
 			xhr.post('/feedback', data).then(function() {
-				self._showSuccessDialog(form);
+				self._showSuccessDialog(form, 'thanks');
 			}, function() {
-				self._showSuccessDialog(form);
+				self._showSuccessDialog(form, 'thanks');
 			});
 
 			return false;
 		};
 	};
 
-	FeedbackController.prototype._showSuccessDialog = function (form) {
-		dimmer.showDimmer(form);
+	FeedbackController.prototype._showSuccessDialog = function (form, type) {
+		console.log(form, type);
+		dimmer.showDimmer(form, type);
 	};
 
 	FeedbackController.prototype._addModernPlaceholderHandler = function (form) {
