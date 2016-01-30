@@ -9,8 +9,24 @@
     <link href="./css/all.css" rel="stylesheet" type="text/css" />
     <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700,600&subset=latin,cyrillic' rel='stylesheet' type='text/css'>
 
-    <script src='./js/feedback.js'></script>
-    <script src='./js/carousel.js'></script>
+    <script src="./js/require.js"></script>
+    <script>
+      window.r5mModules = ['feedback', 'r5mDimmer'];
+
+      require.config({
+        baseUrl: './js',
+        packages: [{
+          name: "r5m",
+          main: ~location.search.indexOf("debug=1") ? "index" : "index-built"
+        }, {
+          name: "vendor",
+          location: "bower_components"
+        }]
+      });
+
+      require(['r5m']);
+
+    </script>
   </head>
 
   <body>
@@ -306,16 +322,25 @@
       </div>
     </footer>
 
-    <script>
-      [].forEach.call(document.querySelectorAll('.r5mFeedback__form'), function(formElem) {
-        new FeedbackController(formElem);
-      });
 
-      [].forEach.call(document.querySelectorAll('.carousel'), function(elem) {
-        new Carousel(elem);
-      });
-
-    </script>
+    <!-- forms -->
+    <div class="r5m-dimmer">
+      <div class="r5m-dimmer__container">
+        <div class="r5m-dimmer-wrapper r5m-dimmer-thanks hidden">
+          <form onsubmit="return false;">
+            <h2>
+              Спасибо!
+            </h2>
+            <p>
+              Мы свяжемся с Вами по указанному E-mail адресу<br/>в кратчайшие сроки.
+            </p>
+            <button class="r5m-action r5m-dimmer-thanks__button" data-action="r5mDimmer-close" type="submit">
+              Ок
+            </button>
+          </form>
+        </div>
+      </div>
+    </div>
   </body>
 
 </html>

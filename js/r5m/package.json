@@ -1,0 +1,5 @@
+{
+  "name" : "r5m-cms",
+  "version": "0.0.11",
+  "dojoBuild": "package.js"
+}
