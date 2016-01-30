@@ -11,7 +11,7 @@ gulp.task('js', function () {
 gulp.task('css', function () {
 	return gulp.src('')
 		.pipe(shell([
-			'r.js cssIn=../css/all.css out=../css/all-built.css'
+			'r.js -o cssIn=css/all.css out=css/all-built.css'
 		]));
 });
 
