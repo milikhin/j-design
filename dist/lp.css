@@ -631,6 +631,9 @@ section h2 {
   -o-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
 }
+.r5m-dimmer__link {
+  color: white;
+}
 .r5m-dimmer {
   color: #dedede;
   background-color: rgba(10%, 10%, 10%, 0.95);

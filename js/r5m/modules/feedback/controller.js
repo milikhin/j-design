@@ -4,8 +4,12 @@ define([
 ], function (xhr, dimmer) {
 	'use strict';
 
-	function FeedbackController(formElem) {
+	function FeedbackController() {
 		// this.formElem = formElem;
+		this._service = 'formspree';
+		if (window.r5m && window.r5m.FEEDBACK_SERVICE) {
+			this._service = window.r5m.FEEDBACK_SERVICE;
+		}
 	}
 
 	FeedbackController.prototype.init = function () {
@@ -20,19 +24,64 @@ define([
 
 		form.onsubmit = function () {
 			var data = {};
-			['name', 'phone', 'mail', 'text'].forEach(function (field) {
+			['name', 'phone', 'email', 'text'].forEach(function (field) {
 				if (form[field]) {
-					data[field] = form[field];
+					data[field] = form[field].value;
 				}
 			});
-			xhr.post('/feedback', data).then(function() {
+			// xhr.post('feedback', {
+
+			self.send(data).then(function () {
 				self._showSuccessDialog(form, 'thanks');
-			}, function() {
-				self._showSuccessDialog(form, 'thanks');
+			}, function () {
+				self._showSuccessDialog(form, 'oops');
 			});
 
 			return false;
 		};
+	};
+
+	FeedbackController.prototype.send = function (data) {
+		if (!data) {
+			throw new Error('Data required to send message');
+		}
+
+		switch (this._service) {
+		case 'emailjs':
+			{
+				// ...
+				break;
+			}
+
+		case 'formspree':
+		default:
+			{
+				data._subject = 'Сообщение на сайте';
+				return xhr.post('http://formspree.io/milikhin@gmail.com', data, {
+					cache: true,
+					headers: {
+						'Accept': 'application/json'
+					}
+				});
+			}
+		}
+	};
+
+	FeedbackController.prototype._getMessage = function (data) {
+		if (!data) {
+			throw new Error('Data required to generate message');
+		}
+		var content = '';
+		for (var i in data) {
+			content += '<li>' + data[i] + '</li>';
+		}
+
+		return '\
+			<p>Это сообщение было сформировано с помощью формы обратной связи на сайте.</p>\
+			<ul>\
+				' + content + '\
+			</ul>\
+		';
 	};
 
 	FeedbackController.prototype._showSuccessDialog = function (form, type) {
