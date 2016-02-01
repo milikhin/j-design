@@ -1,5 +1,5 @@
 .header {
-  background: url('../images/header.jpg') no-repeat;
+  background: #1f1614 url('../images/header.jpg') no-repeat;
   background-size: cover;
   background-position: left bottom;
   position: relative;
