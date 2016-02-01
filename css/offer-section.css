@@ -11,6 +11,9 @@
 
 }
 
+.offer.last-block  {
+  padding-bottom: 60px;
+}
 
 .offer__feedback-wrapper {
   /*max-width: 1000px;*/

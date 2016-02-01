@@ -4,6 +4,8 @@
 
 .photo-container__photo-src img {
   width: 100%;
+
+  border-radius: 5px;
 }
 
 .photo-container {
