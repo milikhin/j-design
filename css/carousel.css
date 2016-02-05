@@ -58,6 +58,11 @@
    color: #ccc;
 }
 
+.carousel .carousel__left-button:hover,
+.carousel .carousel__right-button:hover {
+  color: #666;
+}
+
 .carousel .carousel__left-button {
    left: 10px;
 }

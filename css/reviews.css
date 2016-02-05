@@ -18,7 +18,9 @@
 }
 
 .review__figure__img {
-  width: 100%;
+  max-width: 100%;
+  max-height: 300px;
+  border-radius: 4px;
 }
 
 .review__content h3 {
