@@ -134,6 +134,7 @@ section {
 .footer {
   background: #1f1614 url(../images/footer-bg.jpg) no-repeat;
   background-size: cover;
+  background-position: center;
   min-width: 100%;
   display: inline-block;
   color: #dedede;
