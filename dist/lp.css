@@ -320,6 +320,18 @@ section {
   font-weight: normal;
   font-style: oblique
 }
+.reviews__separate-list {
+  list-style-type: none;
+}
+.reviews__separate-list li {
+  clear: both;
+}
+.reviews__separate-list .review__content-wrapper{
+  margin-bottom: 20px;
+}
+.reviews__separate-list .review__figure__img {
+  margin-bottom: 40px;
+}
 .contacts {
   padding-bottom: 50px;
 }
