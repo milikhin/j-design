@@ -7,7 +7,6 @@
   display: inline-block;
 
   color: #dedede;
-  padding: 20px 0;  
 }
 
 .copyright {
@@ -16,4 +15,9 @@
 
 .copyright__contact {
   margin: 0;
+}
+
+.footer-dark {
+  padding: 20px 0;
+  background: rgba(0,0,0,0.75);
 }

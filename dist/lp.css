@@ -43,10 +43,15 @@ section {
   background-position: left bottom;
   position: relative;
   color: #dedede;
-  padding-top: 40px;
   min-width: 100%;
   display: inline-block;
+  margin: 0;
+  padding: 0;
   
+}
+.header-dark {
+  padding-top: 40px;
+  background: rgba(0,0,0,0.65)
 }
 .header__order {
   width: 240px;
@@ -132,13 +137,16 @@ section {
   min-width: 100%;
   display: inline-block;
   color: #dedede;
-  padding: 20px 0;  
 }
 .copyright {
   text-align: left;
 }
 .copyright__contact {
   margin: 0;
+}
+.footer-dark {
+  padding: 20px 0;
+  background: rgba(0,0,0,0.75);
 }
 .offer {
   
