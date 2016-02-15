@@ -9,6 +9,8 @@ gulp.task('daemon', function() {
   gulp.watch('css/**/*.css', ['css']);
   gulp.watch('bower_components/**/*.css', ['css']);
   gulp.watch('bower_components/**/*.js', ['js']);
+  gulp.watch('tpl/**/*.ejs', ['html-render']);
+  gulp.watch('bower_components/r5m-cms/**/*.ejs', ['html-render']);
 });
 
 
@@ -29,8 +31,8 @@ gulp.task('css', shell.task([
 var htmlCompileScripts = [];
 var htmlRenderScripts = [];
 htmlFiles.forEach(function(fileName) {
-  htmlCompileScripts.push('node ./node_modules/ejs-on-command/index.js tpl/' + fileName + '.ejs -j \'{"filename": "./tpl/' + fileName + '"}\' > dist/html/'+ fileName +'.html');
-  htmlRenderScripts.push('html-minifier --config-file ./.htmlminirc -o '+ fileName +'.html ./dist/html/' + fileName + '.html');
+  htmlCompileScripts.push('./node_modules/.bin/ejs-on-command tpl/' + fileName + '.ejs -j \'{"filename": "./tpl/' + fileName + '"}\' > dist/html/' + fileName + '.html');
+  htmlRenderScripts.push('./node_modules/.bin/html-minifier --config-file ./.htmlminirc -o ' + fileName + '.html ./dist/html/' + fileName + '.html');
 });
 
 gulp.task('html-compile', shell.task(htmlCompileScripts));
@@ -38,6 +40,7 @@ gulp.task('html-compile', shell.task(htmlCompileScripts));
 gulp.task('html-render', ['html-compile'], shell.task(htmlRenderScripts));
 
 gulp.task('install', shell.task([
+  'npm i;',
   'bower install https://github.com/milikhin/r5m-client.git',
   'cd bower_components/r5m-cms; git init; \
 	git remote add origin git@github.com:milikhin/r5m-client.git; \
