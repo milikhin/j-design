@@ -41,7 +41,7 @@ gulp.task('html-render', ['html-compile'], shell.task(htmlRenderScripts));
 
 gulp.task('install', shell.task([
   'npm i;',
-  'bower install https://github.com/milikhin/r5m-client.git',
+  './node_modules/.bin/bower install https://github.com/milikhin/r5m-client.git',
   'cd bower_components/r5m-cms; git init; \
 	git remote add origin git@github.com:milikhin/r5m-client.git; \
 	git add --all; \
