@@ -9,6 +9,7 @@
   "author": "mikhael",
   "license": "ISC",
   "dependencies": {
+    "ejs-on-command": "^1.0.0",
     "gulp": "^3.9.0",
     "gulp-shell": "^0.5.2"
   }
