@@ -10,9 +10,10 @@
   "license": "ISC",
   "dependencies": {
     "bower": "^1.7.7",
-    "ejs-on-command": "^1.0.0",
+    "ejs-on-command": "https://github.com/r5m-team/ejs-on-command.git",
     "gulp": "^3.9.0",
     "gulp-shell": "^0.5.2",
-    "html-minifier": "^1.1.1"
+    "html-minifier": "^1.1.1",
+    "requirejs": "^2.1.22"
   }
 }

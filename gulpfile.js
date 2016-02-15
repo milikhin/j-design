@@ -17,14 +17,14 @@ gulp.task('daemon', function() {
 gulp.task('js', function() {
   gulp.src(['bower_components/requirejs/require.js', 'bower_components/r5m-cms/js/start.js'])
     .pipe(shell([
-      'r.js -o baseUrl=. paths.r5m=bower_components/r5m-cms/js paths.vendor=bower_components name=bower_components/r5m-cms/js/index out=dist/lp.js'
+      './node_modules/.bin/r.js -o baseUrl=. paths.r5m=bower_components/r5m-cms/js paths.vendor=bower_components name=bower_components/r5m-cms/js/index out=dist/lp.js'
     ]))
     .pipe(gulp.dest('./dist/'));
 });
 
 gulp.task('css', shell.task([
-  'r.js -o cssIn=bower_components/r5m-cms/css/all.css out=dist/engine.css',
-  'r.js -o cssIn=css/project.css out=dist/lp.css'
+  './node_modules/.bin/r.js -o cssIn=bower_components/r5m-cms/css/all.css out=dist/engine.css',
+  './node_modules/.bin/r.js -o cssIn=css/project.css out=dist/lp.css'
 ]));
 
 
@@ -40,7 +40,7 @@ gulp.task('html-compile', shell.task(htmlCompileScripts));
 gulp.task('html-render', ['html-compile'], shell.task(htmlRenderScripts));
 
 gulp.task('install', shell.task([
-  'npm i;',
+  'mkdir ./dist/html',
   './node_modules/.bin/bower install https://github.com/milikhin/r5m-client.git',
   'cd bower_components/r5m-cms; git init; \
 	git remote add origin git@github.com:milikhin/r5m-client.git; \
@@ -50,4 +50,4 @@ gulp.task('install', shell.task([
 ]));
 
 
-gulp.task('default', ['js', 'css', 'daemon']);
+gulp.task('default', ['js', 'css', 'html-render', 'daemon']);
