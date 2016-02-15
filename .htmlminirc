@@ -6,7 +6,7 @@
   "conservativeCollapse": false,
   "collapseBooleanAttributes": true,
   "removeTagWhitespace": true,
-  "removeAttributeQuotes": true,
+  "removeAttributeQuotes": false,
   "removeRedundantAttributes": true,
   "useShortDoctype": true,
   "removeEmptyAttributes": true,
