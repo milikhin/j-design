@@ -1238,7 +1238,7 @@ section {
   display:none;
 }
 .pricing__item-alter {
-  background: rgba(0,0,0,0.75);
+  background: rgba(0,0,0,0.85);
 }
 .pricing__item-alter-wrapper {
   background: url(../images/whatis.jpg) no-repeat;
