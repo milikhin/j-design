@@ -1,3 +1,8 @@
+.wtf-wrapper {
+  background: url('../images/whatis.jpg') no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+}
 .wtf {
   color: #dedede;
   padding: 20px 0;
