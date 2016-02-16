@@ -17,7 +17,16 @@ gulp.task('daemon', function() {
 gulp.task('js', function() {
   gulp.src(['bower_components/requirejs/require.js', 'bower_components/r5m-cms/js/start.js'])
     .pipe(shell([
-      './node_modules/.bin/r.js -o baseUrl=. paths.r5m=bower_components/r5m-cms/js paths.vendor=bower_components name=bower_components/r5m-cms/js/index out=dist/lp.js'
+      './node_modules/.bin/r.js -o \
+        generateSourceMaps=true \
+        preserveLicenseComments=false \
+        optimize=uglify2 \
+        normalizeDirDefines=skip \
+        baseUrl=. \
+        paths.r5m=bower_components/r5m-cms/js \
+        paths.vendor=bower_components \
+        name=bower_components/r5m-cms/js/index \
+        out=dist/lp.js'
     ]))
     .pipe(gulp.dest('./dist/'));
 });
