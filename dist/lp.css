@@ -579,6 +579,7 @@ body {
   font-family: "Open Sans", sans-serif;
   margin: 0;
   padding: 0;
+  color: black;
 }
 .is-hidden {
   display: none;
@@ -1260,4 +1261,18 @@ section {
   cursor: pointer;
   color: black;
   font-size: 1.2rem;
+}
+.portfolio .photo-container {
+  max-width: 19%;
+}
+.portfolio .r5m-gallery-link {
+  color: #333;
+  font-size: 0.85rem;
+}
+.portfolio .r5m-gallery-img figcaption {
+  display: block;
+  text-align: center;
+}
+.portfolio__row {
+  margin-bottom: 40px;
 }
