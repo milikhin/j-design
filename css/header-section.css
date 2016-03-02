@@ -80,6 +80,7 @@
   border: none;
   border-top: dashed 1px;
   margin: 0;
+  display: block;
 }
 
 .header__order__call__button {
