@@ -722,13 +722,14 @@ section {
   margin: 20px auto 0;
   
 }
-.offer.last-block  {
+.offer.last-block {
   padding-bottom: 60px;
 }
 .offer__feedback-wrapper {
   
   margin: 0 auto;
-  border: solid 4px #ccc; 
+  border: solid 4px #ccc;
+  
   border-radius: 4px;
   box-sizing: border-box;
   position: relative;
@@ -749,6 +750,7 @@ section {
   margin: 0 0 0 50%;
   text-align: center;
   border-left: solid 4px #ccc;
+  
   border-radius: 0;
   padding: 20px 50px;
   box-sizing: border-box;
@@ -793,6 +795,17 @@ section {
   width: 30px;
   background: url(../images/arrow_yellow.png) no-repeat;
   background-size: auto 100%;
+}
+.pre-order,
+.contacts.pre-order {
+  margin-bottom: 0;
+  padding-bottom: 0;
+}
+.pre-order .last {
+  margin-bottom: 0;
+}
+.pre-order a {
+  color: inherit;
 }
 .stages__title {
   text-align: center;
