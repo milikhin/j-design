@@ -1452,6 +1452,9 @@ section h2 {
   color: black;
   margin-bottom: 10px;
 }
+.photo-container__photo-updater {
+  color: black;
+}
   .carousel__left-button__text,
 .carousel__right-button__text {
   display: block;
