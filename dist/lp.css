@@ -703,6 +703,9 @@ section {
   display: inline-block;
   color: #dedede;
 }
+.footer .flexible-container {
+  position: relative;
+}
 .copyright {
   text-align: left;
 }
@@ -716,16 +719,16 @@ section {
   font-weight: 400;
 }
 .footer-dark {
-  padding: 20px 0;
-  background: rgba(0,0,0,0.75);
+  padding: 20px 0 0;
+  background: rgba(0, 0, 0, 0.75);
 }
 .madein {
   float: right;
 }
 .madein p {
-  margin: 0;
+  margin: 0 0 20px;
   font-size: 0.8em;
-  padding: 0 0 10px 0;
+  padding: 0;
 }
 .madein a {
   color: #ccc;
