@@ -43,3 +43,10 @@
 .contacts .contacts-name {
   text-indent: 0;
 }
+
+.r5m-gallery-img figcaption {
+  display: block;
+  text-align: center;
+  color: black;
+  margin-bottom: 10px;
+}

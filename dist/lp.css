@@ -1446,6 +1446,12 @@ section h2 {
 .contacts .contacts-name {
   text-indent: 0;
 }
+.r5m-gallery-img figcaption {
+  display: block;
+  text-align: center;
+  color: black;
+  margin-bottom: 10px;
+}
   .carousel__left-button__text,
 .carousel__right-button__text {
   display: block;
