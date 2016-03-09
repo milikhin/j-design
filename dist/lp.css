@@ -1402,7 +1402,10 @@ section h2 {
 .offer__feedback-wrapper {
   border: none;
 }
-  .wtf li {
+  .wtf ul {
+  padding: 0;
+}
+.wtf li {
   width: 100%;
 }
 .stages__blocks .stages__blocks__stage .stages__blocks__stage__content-wrapper,
