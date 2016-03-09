@@ -936,7 +936,10 @@ section {
   margin-bottom: 20px;
 }
 .reviews__separate-list .review__figure__img {
-  margin-bottom: 40px;
+  margin-bottom: 0;
+}
+.reviews__separate-list {
+  padding: 0;
 }
 .contacts {
   padding-bottom: 50px;
@@ -1314,4 +1317,193 @@ section {
 }
 .portfolio__work__description {
   text-indent: 1.2em;
+}
+@media all and (max-width: 600px) {
+  .flexible-container {
+  min-width: 280px;
+  padding: 0 10px;
+}
+.r5m-dimmer {
+  text-align: center;
+}
+.r5m-dimmer .r5mFeedback {
+  width: 280px;
+}
+.r5m-dimmer .r5mFeedback__submit-button {
+  width: 280px;
+}
+.r5m-dimmer__container::before {
+  margin: 0;
+}
+section h2 {
+  margin-bottom: 10px;
+}
+  .header__title__caption {
+  font-size: 1.3rem;
+}
+.header__title {
+  margin-bottom: 20px;
+}
+.header-dark {
+  padding: 10px 0;
+}
+.header__order {
+  margin: 0 auto;
+  text-align: center;
+  float: none;
+  width: auto;
+}
+.header__order__phone-wrapper {
+  text-align: left;
+  color: #f3da37;
+}
+.menu-container {
+  clear: both;
+  position: static;
+  margin-top: 20px;
+  text-align: left;
+}
+.header__title__caption {
+  margin-bottom: 20px;
+}
+.header__title__subtitle {
+  margin-top: 0;
+}
+.menu-container__list__item {
+  padding: 0;
+  text-align: left;
+}
+.menu-container__list__item a {
+  padding: 2px 0;
+  margin: 5px 10px 5px 0;
+  display: inline-block;
+  border-bottom: solid 1px;
+}
+.menu-container__list__item a:hover {
+  border-width: 1px;
+}
+.header__order__call {
+  display: none;
+}
+  .offer__feedback {
+  margin: 0;
+  width: 100%;
+}
+.offer__feedback {
+  padding: 0;
+  border: none;
+}
+.offer__feedback-wrapper::before {
+  display: none;
+}
+.offer__feedback-wrapper {
+  border: none;
+}
+  .wtf li {
+  width: 100%;
+}
+.stages__blocks .stages__blocks__stage .stages__blocks__stage__content-wrapper,
+.stages__blocks .stages__blocks__stage .stages__blocks__stage__content,
+.stages__blocks .stages__blocks__stage .stages__blocks__stage__figure {
+  float: none;
+  margin: 0;
+  padding: 0;
+}
+.stages__blocks__stage__figure {
+  width: auto;
+}
+  .about-me__image {
+  float: none;
+  text-align: center;
+  margin: 0 auto;
+  display: block;
+}
+.about-me__content,
+.review__content p,
+.pre-order p {
+  text-indent: 1.2em;
+}
+.about-me__certs .photo-container {
+  max-width: 100%;
+  margin: 0 0 10px 0;
+}
+.offer__subtitle br {
+  display: none;
+}
+.madein {
+  float: none;
+  margin: 10px 0 0 0;
+  padding: 0;
+}
+.madein p {
+  padding: 0;
+}
+.contacts__entry__value  {
+  display: block;
+  margin-bottom: 10px;
+}
+.contacts .contacts__entry,
+.contacts .contacts-name {
+  text-indent: 0;
+}
+  .carousel__left-button__text,
+.carousel__right-button__text {
+  display: block;
+  font-size: 15px;
+  position: absolute;
+  top: 0.75em;
+  left: 2em;
+}
+.carousel__right-button__text {
+  left: auto;
+  right: 2em;
+}
+.carousel .carousel__left-button {
+  position: static;
+  margin: 20px 20px;
+  float: left;
+}
+.carousel .carousel__right-button {
+  position: static;
+  margin: 20px 20px;
+  float: right;
+}
+.carousel__inner-wrapper {
+  clear: both;
+}
+.carousel {
+  padding: 0;
+}
+  .review__content {
+  margin: 0;
+  padding: 0;
+  float: none;
+}
+.review__figure {
+  float: none;
+  width: auto;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
+.review__content-wrapper {
+  clear: both;
+}
+.review__content h3 {
+  background: none;
+  font-weight: bold;
+}
+.review__content h3::before {
+  display: none;
+}
+  .portfolio .photo-container {
+  max-width: 100%;
+  margin: 0 0 15px 0;
+}
+  .pricing__item__group-1,
+.pricing__item__group-2 {
+  width: 100%;
+  float: none;
+  padding: 0;
+}
 }

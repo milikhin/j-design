@@ -56,7 +56,7 @@
         </figure>
       </div>
       <div class="stages__blocks__stage clearfix">
-        <figure class="stages__blocks__stage__figure">
+        <figure class="stages__blocks__stage__figure nomobile-only">
           <img alt="Разработка планировочного решения" class="stages__blocks__stage__figure__img" src="./images/stage-2.jpg" />
         </figure>
         <div class="stages__blocks__stage__content-wrapper">
@@ -71,7 +71,9 @@
               </ul>
           </div>
         </div>
-
+        <figure class="stages__blocks__stage__figure mobile-only">
+          <img alt="Разработка планировочного решения" class="stages__blocks__stage__figure__img" src="./images/stage-2.jpg" />
+        </figure>
       </div>
       <div class="stages__blocks__stage clearfix">
         <div class="stages__blocks__stage__content-wrapper">
@@ -93,7 +95,7 @@
         </figure>
       </div>
       <div class="stages__blocks__stage clearfix">
-        <figure class="stages__blocks__stage__figure">
+        <figure class="stages__blocks__stage__figure nomobile-only">
           <img alt="Авторский надзор" class="stages__blocks__stage__figure__img" src="./images/stage-4_.jpg" />
         </figure>
         <div class="stages__blocks__stage__content-wrapper">
@@ -107,6 +109,9 @@
               </ul>
           </div>
         </div>
+        <figure class="stages__blocks__stage__figure mobile-only">
+          <img alt="Авторский надзор" class="stages__blocks__stage__figure__img" src="./images/stage-4_.jpg" />
+        </figure>
       </div>
     </div>
   </div>
@@ -269,8 +274,12 @@
           </div>
         </li>
       </ul>
-      <span class="carousel__left-button"><i class="fa fa-chevron-left"></i></span>
-      <span class="carousel__right-button"><i class="fa fa-chevron-right"></i></span>
+      <div class="carousel__left-button"><i class="fa fa-chevron-left"></i>
+        <span class="mobile-only carousel__left-button__text">Пред.</span>
+      </div>
+      <div class="carousel__right-button"><i class="fa fa-chevron-right"></i>
+        <span class="mobile-only carousel__right-button__text">След.</span>
+      </div>
     </div>
   </div>
 </section>

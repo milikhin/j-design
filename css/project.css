@@ -17,3 +17,5 @@
 @import 'horizontal-menu.css';
 @import 'pricing.css';
 @import 'portfolio.css';
+
+@import 'mobile/project.css';

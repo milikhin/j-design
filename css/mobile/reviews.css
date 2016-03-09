@@ -1,0 +1,26 @@
+.review__content {
+  margin: 0;
+  padding: 0;
+  float: none;
+}
+
+.review__figure {
+  float: none;
+  width: auto;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
+
+.review__content-wrapper {
+  clear: both;
+}
+
+.review__content h3 {
+  background: none;
+  font-weight: bold;
+}
+
+.review__content h3::before {
+  display: none;
+}

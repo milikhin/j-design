@@ -1,0 +1,17 @@
+.offer__feedback {
+  margin: 0;
+  width: 100%;
+}
+
+.offer__feedback {
+  padding: 0;
+  border: none;
+}
+
+.offer__feedback-wrapper::before {
+  display: none;
+}
+
+.offer__feedback-wrapper {
+  border: none;
+}
