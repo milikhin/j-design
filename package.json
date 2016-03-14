@@ -7,14 +7,28 @@
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "mikhael",
-  "license": "ISC",
-  "dependencies": {
+  "license": "UNLICENSED",
+  "r5m": {
+    "deployTo": "git@github.com:milikhin/j-design.git",
+    "htmlFiles": [
+			"index",
+			"contacts",
+			"pricing",
+			"portfolio",
+			"reviews"
+    ],
+    "minifyHtml": true,
+    "clientVersion": "v0.0.4"
+  },
+	"dependencies": {
     "bower": "^1.7.7",
     "browser-sync": "^2.11.1",
     "ejs-on-command": "https://github.com/r5m-team/ejs-on-command.git",
-    "gulp": "^3.9.0",
+    "gulp": "^3.9.1",
+    "gulp-gh-pages": "^0.5.4",
     "gulp-shell": "^0.5.2",
-    "html-minifier": "^1.1.1",
+    "html-minifier": "^1.2.0",
+    "merge-stream": "^1.0.0",
     "requirejs": "^2.1.22"
   }
 }
