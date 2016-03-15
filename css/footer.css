@@ -11,8 +11,6 @@
   position: relative;
 }
 
-
-
 .copyright {
   text-align: left;
 }
@@ -48,5 +46,9 @@
 }
 
 .copyright__contact__label {
+  color: #aaa;
+}
+
+.privacy-policy {
   color: #aaa;
 }
