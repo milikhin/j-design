@@ -1,6 +1,6 @@
 {
   "name": "r5m-lp",
-  "version": "0.0.1",
+  "version": "0.0.4",
   "description": "",
   "main": "index.js",
   "scripts": {
@@ -18,7 +18,7 @@
 			"reviews"
     ],
     "minifyHtml": true,
-    "clientVersion": "v0.0.5"
+    "clientVersion": "v0.0.6"
   },
 	"dependencies": {
     "bower": "^1.7.7",
