@@ -18,7 +18,7 @@
 			"reviews"
     ],
     "minifyHtml": true,
-    "clientVersion": "v0.0.4"
+    "clientVersion": "v0.0.5"
   },
 	"dependencies": {
     "bower": "^1.7.7",

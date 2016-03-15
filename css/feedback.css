@@ -71,66 +71,9 @@
   background-color: rgba(10%, 10%, 10%, 0.5);
 }*/
 
-.r5m-dimmer .r5mFeedback {
-  display: block;
-  /*position: fixed;*/
-  /*top: 20%;*/
-  /*left: 50%;*/
-  /*margin-left: -240px;*/
-  margin: auto;
-  padding: 15px;
-  text-align: center;
-  background-color: rgba(100%, 100%, 100%, 0.9);
-  -webkit-border-radius: 5px;
-  -moz-border-radius: 5px;
-  border-radius: 5px;
-  width: 300px;
-}
 
-.r5m-dimmer .r5mFeedback__form {
-  margin: 0;
-  padding: 0;
-}
-
-.r5m-dimmer .r5mFeedback__form__header {
-  margin: 0 0 15px 0;
-  padding: 0;
-  font-size: 1.25rem;
-  font-weight: bold;
-  text-transform: uppercase;
-  color: #2b2a29;
-}
-
-.r5m-dimmer .r5mFeedback__input,
-.r5m-dimmer .r5mFeedback__text {
-  display: block;
-  position: relative;
-  margin-bottom: 10px;
-  /*padding: 22px 15px 10px 15px;*/
-  padding: 12px;
-  /*font-size: 1.3rem;*/
-  font-size: 20px;
-  width: 100%;
-  color: #252525;
-  -webkit-border-radius: 5px;
-  -moz-border-radius: 5px;
-  border-radius: 5px;
-  -moz-box-sizing: border-box;
-  -webkit-box-sizing: border-box;
-  box-sizing: border-box;
-  border: 1px solid #99999a;
-  background-color: white;
-}
-
-.r5m-dimmer .r5mFeedback__text {
-  min-height: 80px;
-  max-height: 200px;
-  max-width: 100%;
-  min-width: 100%;
-}
 
 .r5m-dimmer .r5mFeedback__submit-button {
-  width: 300px;
   margin-top: 10px;
   padding: 8px 0;
   font-size: 1rem;
@@ -221,4 +164,27 @@
 
 .r5m-dimmer .r5mFeedback__input-with-modern-placeholder {
   padding: 19px 15px 5px 15px;
+}
+
+
+.r5m-dimmer .r5mFeedback__privacy-statement {
+  color: #555
+}
+
+.r5mFeedback__privacy-statement {
+  margin: 20px 0 0 0;
+  color: #555;
+  font-size: 0.8em;
+}
+
+.r5m-dimmer .r5mFeedback__privacy-statement {
+  margin: 0;
+}
+
+.r5mFeedback__privacy-statement a {
+  color: #666;
+}
+
+.r5m-dimmer .r5mFeedback__form__header {
+  text-transform: none;
 }

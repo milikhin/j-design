@@ -23,12 +23,15 @@
     <div class="r5m-dimmer-wrapper r5m-dimmer-oops hidden">
       <form onsubmit="return false;">
         <h2>
-            Упс :-(
-          </h2>
+          Упс :-(
+        </h2>
         <p>
           К сожалению, ваше сообщение не было отправлено из-за ошибки.
-          <br/> Приносим извинения за доставленные неудобства
-          <br/> Пожалуйста, свяжитесь со мной <a class="r5m-dimmer__link" href="contacts.html">любым другим способом</a>,
+          <br/>
+          Приносим извинения за доставленные неудобства
+          <br/>
+          Пожалуйста, свяжитесь со мной
+          <a class="r5m-dimmer__link" href="contacts.html">любым другим способом</a>,
           <br/>и я с радостью отвечу на все Ваши вопросы.
         </p>
         <button class="r5m-action r5m-dimmer-thanks__button" data-action="r5mDimmer-close" type="submit">
@@ -47,12 +50,19 @@
           <h2 class="r5mFeedback__form__header">Закажите звонок</h2>
           <label class="r5mFeedback__label">
             <span class="r5mFeedback__placeholder">Имя*</span>
-            <input class="r5mFeedback__input" name="name" required type="text" />
+            <input class="r5mFeedback__input" name="name" required type="text"/>
           </label>
           <label class="r5mFeedback__label">
             <span class="r5mFeedback__placeholder">Телефон*</span>
-            <input class="r5mFeedback__input" name="phone" required type="text" />
+            <input class="r5mFeedback__input" name="phone" required type="text"/>
           </label>
+          <div class="r5mFeedback__privacy-statement-container">
+            <p class="r5mFeedback__privacy-statement">
+              Мы гарантируем 100% конфиденциальность. Ваша информация не будет распространяться.
+              <br/>
+              <a target="_blank" href="https://www.iubenda.com/privacy-policy/7813902">Политика конфиденциальности</a>
+            </p>
+          </div>
           <button class="r5mFeedback__submit-button submit-button" type="submit">
             Заказать звонок
           </button>
@@ -84,6 +94,15 @@
             <span class="r5mFeedback__placeholder">Комментарии</span>
             <textarea class="r5mFeedback__text" name="text"></textarea>
           </label>
+
+          <div class="r5mFeedback__privacy-statement-container">
+            <p class="r5mFeedback__privacy-statement">
+              Мы гарантируем 100% конфиденциальность. Ваша информация не будет распространяться.
+              <br/>
+              <a target="_blank" href="https://www.iubenda.com/privacy-policy/7813902">Политика конфиденциальности</a>
+            </p>
+          </div>
+
           <button class="r5mFeedback__submit-button submit-button" type="submit">
             Оставить заявку
           </button>
