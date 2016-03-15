@@ -274,6 +274,14 @@ body.with-dimmer {
 .r5m-dimmer .r5mFeedback__form__offer {
   color: #333;
 }
+.r5mFeedback__privacy-statement {
+  text-align: left;
+  font-size: 0.8em;
+  margin: 5px 0;
+}
+.r5m-dimmer .r5mFeedback__privacy-statement a {
+  color: #666;
+}
 .r5m-dimmer {
   background-color: rgba(10%, 10%, 10%, 0.75);
   z-index: 10;
@@ -564,6 +572,14 @@ body.with-dimmer {
 .nomobile-only {
   display: none!important;
 }
+.r5m-dimmer .r5mFeedback {
+  max-width: 100%;
+  box-sizing: border-box;
+}
+.r5m-dimmer .r5mFeedback__submit-button {
+  width: 100%;
+  box-sizing: border-box;
+}
 }
 .clearfix::after {
   content: "";
@@ -734,6 +750,9 @@ section {
   color: #ccc;
 }
 .copyright__contact__label {
+  color: #aaa;
+}
+.privacy-policy {
   color: #aaa;
 }
 .offer {
@@ -1082,61 +1101,7 @@ section {
 .r5mFeedback__input-with-modern-placeholder {
   padding: 19px 15px 5px 15px;
 }
-.r5m-dimmer .r5mFeedback {
-  display: block;
-  
-  
-  
-  
-  margin: auto;
-  padding: 15px;
-  text-align: center;
-  background-color: rgba(100%, 100%, 100%, 0.9);
-  -webkit-border-radius: 5px;
-  -moz-border-radius: 5px;
-  border-radius: 5px;
-  width: 300px;
-}
-.r5m-dimmer .r5mFeedback__form {
-  margin: 0;
-  padding: 0;
-}
-.r5m-dimmer .r5mFeedback__form__header {
-  margin: 0 0 15px 0;
-  padding: 0;
-  font-size: 1.25rem;
-  font-weight: bold;
-  text-transform: uppercase;
-  color: #2b2a29;
-}
-.r5m-dimmer .r5mFeedback__input,
-.r5m-dimmer .r5mFeedback__text {
-  display: block;
-  position: relative;
-  margin-bottom: 10px;
-  
-  padding: 12px;
-  
-  font-size: 20px;
-  width: 100%;
-  color: #252525;
-  -webkit-border-radius: 5px;
-  -moz-border-radius: 5px;
-  border-radius: 5px;
-  -moz-box-sizing: border-box;
-  -webkit-box-sizing: border-box;
-  box-sizing: border-box;
-  border: 1px solid #99999a;
-  background-color: white;
-}
-.r5m-dimmer .r5mFeedback__text {
-  min-height: 80px;
-  max-height: 200px;
-  max-width: 100%;
-  min-width: 100%;
-}
 .r5m-dimmer .r5mFeedback__submit-button {
-  width: 300px;
   margin-top: 10px;
   padding: 8px 0;
   font-size: 1rem;
@@ -1217,6 +1182,23 @@ section {
 }
 .r5m-dimmer .r5mFeedback__input-with-modern-placeholder {
   padding: 19px 15px 5px 15px;
+}
+.r5m-dimmer .r5mFeedback__privacy-statement {
+  color: #555
+}
+.r5mFeedback__privacy-statement {
+  margin: 20px 0 0 0;
+  color: #555;
+  font-size: 0.8em;
+}
+.r5m-dimmer .r5mFeedback__privacy-statement {
+  margin: 0;
+}
+.r5mFeedback__privacy-statement a {
+  color: #666;
+}
+.r5m-dimmer .r5mFeedback__form__header {
+  text-transform: none;
 }
 .menu-container {
   margin: auto;
@@ -1322,18 +1304,13 @@ section {
   text-indent: 1.2em;
 }
 @media all and (max-width: 600px) {
-  .flexible-container {
-  min-width: 280px;
-  padding: 0 10px;
-}
+  
 .r5m-dimmer {
   text-align: center;
 }
-.r5m-dimmer .r5mFeedback {
-  width: 280px;
-}
-.r5m-dimmer .r5mFeedback__submit-button {
-  width: 280px;
+.flexible-container {
+  min-width: 0;
+  padding: 0 10px 0;
 }
 .r5m-dimmer__container::before {
   margin: 0;
