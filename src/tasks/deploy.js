@@ -5,7 +5,6 @@ var ghPages = require('gulp-gh-pages');
 
 function getRemoteUrl(options) {
 	var remoteUrl = '';
-
 	try {
 		remoteUrl = options.packageJson.r5m.deployTo;
 		if (remoteUrl == '') {
